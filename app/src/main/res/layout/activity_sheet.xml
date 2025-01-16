@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Individual Member Data Table -->
+        <TextView
+            android:id="@+id/individualTableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Individual Member Data Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:id="@+id/sheetTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+
+            android:padding="8dp"
+            android:background="@drawable/bordered_background">
+        </TableLayout>
+
+        <!-- Grand Total Data Table -->
+        <TextView
+            android:id="@+id/grandTotalTableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand Total Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TableLayout
+            android:id="@+id/grandTotalTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+            android:background="@drawable/strokeline"
+            android:padding="10dp">
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Individual Data"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinnerName"
+                android:background="@drawable/bordered_background"
+                android:layout_width="match_parent"
+                android:layout_height="54dp" />
+
+            <Button
+                android:id="@+id/showButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Table" />
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/individualtable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordered_background"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

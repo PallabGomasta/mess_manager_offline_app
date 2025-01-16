@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveMember"
+    android:background="@drawable/removemem">
+
+
+    <Spinner
+        android:id="@+id/spinnerTables"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="32dp"
+        android:scrollbarSize="@dimen/material_emphasis_high_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bordered_background"/>
+
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Remove"
+        android:textColor="@color/background_color"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTables" />
+
+    <Button
+        android:id="@+id/removememback"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DEFF8888"
+        android:gravity="center"
+        android:text="BACK"
+        android:textColor="#2E2A2A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRemove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

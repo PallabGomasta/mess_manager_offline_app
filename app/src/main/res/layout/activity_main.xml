@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainactivity"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="347dp"
+        android:layout_height="460dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="#9D8FF0"
+            app:layout_constraintBottom_toTopOf="@+id/frame3"
+            app:layout_constraintEnd_toStartOf="@+id/frame2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_open_sheet"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:background="#9D8FF0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_apps_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Sheet"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#9D8FF0"
+            app:layout_constraintBottom_toTopOf="@+id/frame4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frame1">
+
+            <ImageButton
+                android:id="@+id/mealcountbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:background="#9D8FF0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_assignment_add_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Meal Count"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="#9D8FF0"
+            app:layout_constraintBottom_toTopOf="@+id/frame5"
+            app:layout_constraintEnd_toStartOf="@+id/frame4"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/cashin"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:background="#9D8FF0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_add_card_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Cash In"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#9D8FF0"
+            app:layout_constraintBottom_toTopOf="@+id/frame6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frame3">
+
+            <ImageButton
+                android:id="@+id/expensein"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:background="#9D8FF0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_add_shopping_cart_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:text="Expense"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="#9D8FF0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/frame6"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/addmembut"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-18dp"
+                android:background="#9D8FF0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_add_reaction_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="2dp"
+                android:text="Add Member"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="#9D8FF0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frame5">
+
+            <ImageButton
+                android:id="@+id/removemembut"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-18dp"
+                android:background="#9D8FF0"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_blind_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="2dp"
+                android:text="Remove Member"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/info_button"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/baseline_announcement_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

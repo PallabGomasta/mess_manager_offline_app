@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context=".MealCount"
+    android:background="@drawable/mealcount">
+
+
+    <Spinner
+        android:id="@+id/spinnerTables"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="210dp"
+        android:scrollbarSize="@dimen/material_emphasis_high_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bordered_background"/>
+
+    <EditText
+        android:id="@+id/editTextMeal"
+        android:textColorHint="@color/dark_gray"
+        android:background="@drawable/bordered_background"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:hint=" Enter Meal"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTables" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:background="@drawable/bordered_background"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Date"
+        app:flow_horizontalAlign="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextMeal" />
+    <Button
+        android:id="@+id/buttonSubmitMeal"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="ADD"
+        android:textColor="@color/background_color"
+        android:textColorLink="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <Button
+        android:id="@+id/mealcountback"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DEFF8888"
+        android:gravity="center"
+        android:text="BACK"
+        android:textColor="#2E2A2A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmitMeal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
